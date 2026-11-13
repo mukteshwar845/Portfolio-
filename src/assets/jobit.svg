@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051026"/>
+      <stop offset="50%" stop-color="#0b1e3b"/>
+      <stop offset="100%" stop-color="#141a3d"/>
+    </linearGradient>
+    <linearGradient id="neon2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)" rx="24"/>
+  <circle cx="680" cy="120" r="150" fill="#38bdf8" opacity="0.12" filter="url(#glow2)"/>
+  <circle cx="120" cy="400" r="160" fill="#818cf8" opacity="0.12" filter="url(#glow2)"/>
+  
+  <!-- Grid overlay -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="160" y1="0" x2="160" y2="500"/>
+    <line x1="320" y1="0" x2="320" y2="500"/>
+    <line x1="480" y1="0" x2="480" y2="500"/>
+    <line x1="640" y1="0" x2="640" y2="500"/>
+  </g>
+
+  <!-- Mockup UI Card -->
+  <rect x="80" y="70" width="640" height="360" rx="16" fill="#0f172a" stroke="url(#neon2)" stroke-width="2" opacity="0.95"/>
+  <rect x="80" y="70" width="640" height="44" rx="16" fill="#1e293b"/>
+  <circle cx="110" cy="92" r="6" fill="#ff5f56"/>
+  <circle cx="130" cy="92" r="6" fill="#ffbd2e"/>
+  <circle cx="150" cy="92" r="6" fill="#27c93f"/>
+
+  <!-- Code / Briefcase graphic -->
+  <rect x="330" y="160" width="140" height="100" rx="12" fill="none" stroke="url(#neon2)" stroke-width="4" filter="url(#glow2)"/>
+  <path d="M 370 160 L 370 140 C 370 130 430 130 430 140 L 430 160" fill="none" stroke="url(#neon2)" stroke-width="4"/>
+  <line x1="330" y1="205" x2="470" y2="205" stroke="#38bdf8" stroke-width="3"/>
+  <circle cx="400" cy="205" r="8" fill="#818cf8"/>
+
+  <!-- Search / Bars graphic -->
+  <rect x="180" y="290" width="130" height="16" rx="8" fill="#38bdf8" opacity="0.7"/>
+  <rect x="335" y="290" width="130" height="16" rx="8" fill="#818cf8" opacity="0.7"/>
+  <rect x="490" y="290" width="130" height="16" rx="8" fill="#06b6d4" opacity="0.7"/>
+
+  <!-- Text -->
+  <text x="400" y="360" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" letter-spacing="2">JOB SEARCH PORTAL</text>
+  <text x="400" y="395" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="16">React • REST API • Responsive UI</text>
+</svg>
