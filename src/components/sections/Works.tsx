@@ -14,7 +14,6 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   index,
   name,
   description,
-  tags,
   image,
   sourceCodeLink,
 }) => {
@@ -31,41 +30,32 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
         glareColor="#aaa6c3"
         className="w-full h-full"
       >
-        <div className="bg-tertiary w-full h-full rounded-2xl p-4 flex flex-col justify-between border border-white/5 hover:border-[#915eff]/40 transition-all duration-300 shadow-card">
-          <div>
-            <div className="relative h-[180px] w-full">
-              <img
-                src={image}
-                alt={name}
-                className="h-full w-full rounded-2xl object-cover"
-              />
-              <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
-                <div
-                  onClick={() => window.open(sourceCodeLink, "_blank")}
-                  className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full shadow-md hover:scale-110 transition-transform"
-                  title="View Source Code"
-                >
-                  <img
-                    src={github}
-                    alt="github"
-                    className="h-1/2 w-1/2 object-contain"
-                  />
-                </div>
+        <div className="bg-tertiary w-full h-full rounded-2xl p-4 flex flex-col border border-white/5 hover:border-[#915eff]/40 transition-all duration-300 shadow-card">
+          <div className="relative h-[180px] w-full">
+            <img
+              src={image}
+              alt={name}
+              className="h-full w-full rounded-2xl object-cover"
+            />
+            <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
+              <div
+                onClick={() => window.open(sourceCodeLink, "_blank")}
+                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full shadow-md hover:scale-110 transition-transform"
+                title="View Source Code"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="h-1/2 w-1/2 object-contain"
+                />
               </div>
             </div>
-            <div className="mt-4">
-              <h3 className="text-[20px] font-bold text-white">{name}</h3>
-              <p className="text-secondary mt-2 text-[13px] leading-relaxed">
-                {description}
-              </p>
-            </div>
           </div>
-          <div className="mt-4 flex flex-wrap gap-2 pt-3 border-t border-white/5">
-            {tags.map((tag) => (
-              <p key={tag.name} className={`text-[12px] font-medium ${tag.color}`}>
-                #{tag.name}
-              </p>
-            ))}
+          <div className="mt-4 flex-1">
+            <h3 className="text-[20px] font-bold text-white">{name}</h3>
+            <p className="text-secondary mt-2 text-[13px] leading-relaxed">
+              {description}
+            </p>
           </div>
         </div>
       </Tilt>
