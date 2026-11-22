@@ -65,8 +65,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="h-9 w-9 rounded-lg object-cover shadow-sm" />
           <p className="flex cursor-pointer text-[18px] font-bold text-white">
-            {config.html.fullName} &nbsp;
-            <span className="hidden sm:inline-block text-[#915EFF]">| 3D Portfolio</span>
+            {config.html.fullName}
           </p>
         </Link>
 
