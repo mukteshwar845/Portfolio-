@@ -1,6 +1,5 @@
 import logo from "./logo.png";
 import backend from "./backend.png";
-import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.svg";
@@ -23,14 +22,13 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import carrent from "./carrent.svg";
-import jobit from "./jobit.svg";
-import tripguide from "./tripguide.svg";
+import seemadrishti from "./seemadrishti.svg";
+import keyrush from "./keyrush.svg";
+import convertx from "./convertx.svg";
 
 export {
   logo,
   backend,
-  creator,
   mobile,
   web,
   github,
@@ -51,7 +49,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
+  seemadrishti,
+  keyrush,
+  convertx,
 };

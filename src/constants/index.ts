@@ -10,7 +10,6 @@ import type {
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -24,9 +23,9 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
+  seemadrishti,
+  keyrush,
+  convertx,
   threejs,
   logo,
 } from "../assets";
@@ -58,10 +57,6 @@ const services: TService[] = [
   {
     title: "Backend Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -123,51 +118,41 @@ const technologies: TTechnology[] = [
 const experiences: TExperience[] = [
   {
     title: "Frontend Developer",
-    companyName: "Freelance & Client Projects",
+    companyName: "Web Applications & UI Engineering",
     icon: web,
     iconBg: "#383E56",
-    date: "March 2021 - April 2022",
+    date: "Jan 2024 - Dec 2024",
     points: [
-      "Developing and maintaining modern web applications using React.js and TypeScript.",
-      "Collaborating with cross-functional teams to create high-quality, responsive user interfaces.",
-      "Implementing responsive design and ensuring seamless cross-browser compatibility.",
-      "Participating in code reviews and optimizing web performance.",
+      "Architected responsive, performant user interfaces using React.js, TypeScript, and modern styling architectures.",
+      "Engineered client-side performance optimizations, state management patterns, and interactive component libraries.",
+      "Collaborated closely with product designers and engineers to convert complex requirements into intuitive digital experiences.",
+      "Enforced strict code standards, accessible UX patterns, and seamless cross-browser compatibility.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Mobile Innovations",
-    icon: mobile,
-    iconBg: "#E6DEDD",
-    date: "May 2022 - Feb 2023",
-    points: [
-      "Building performant cross-platform mobile applications using React Native and modern libraries.",
-      "Integrating RESTful APIs, state management, and smooth touch gestures.",
-      "Ensuring responsive mobile UI layouts across iOS and Android devices.",
-    ],
-  },
-  {
-    title: "Full Stack Developer",
-    companyName: "Tech Solutions",
+    title: "Full Stack Engineer",
+    companyName: "Cloud Systems & Scalable Solutions",
     icon: backend,
-    iconBg: "#383E56",
-    date: "March 2023 - Dec 2023",
+    iconBg: "#E6DEDD",
+    date: "Jan 2025 - Dec 2025",
     points: [
-      "Developing robust backend services and REST APIs with Node.js, Express, and MongoDB.",
-      "Architecting full-stack web applications with modern reactive user interfaces.",
-      "Writing clean, modular, and maintainable TypeScript code with end-to-end reliability.",
+      "Engineered robust full-stack web applications and microservices using Node.js, Express, MongoDB, and Next.js.",
+      "Designed secure RESTful APIs, authentication workflows, and scalable database schemas with high availability.",
+      "Integrated 3D WebGL visualizations and dynamic data-driven interfaces for complex web platforms.",
+      "Automated CI/CD pipelines, containerized deployments with Docker, and optimized server-side query latency.",
     ],
   },
   {
-    title: "Software Engineer & 3D Web Creator",
-    companyName: "Mukteswar Studio",
+    title: "Full Stack Developer with AI Integration",
+    companyName: "AI Solutions & Intelligent Systems",
     icon: logo,
     iconBg: "#151030",
-    date: "Jan 2024 - Present",
+    date: "Jan 2026 - Present",
     points: [
-      "Crafting immersive 3D web experiences using Three.js, React Three Fiber, and Tailwind CSS.",
-      "Designing and delivering modern, interactive portfolio experiences with optimal performance.",
-      "Continuously learning cutting-edge web technologies and software engineering best practices.",
+      "Architecting intelligent full-stack applications integrating state-of-the-art LLMs, computer vision, and real-time AI pipelines.",
+      "Engineering mission-critical solutions including real-time AI surveillance matrices (SEEMADRISHTI) and automated document intelligence engines.",
+      "Bridging modern reactive frontend architectures, 3D WebGL interfaces, and high-throughput AI backend inference models.",
+      "Continuously pushing the boundaries of AI-driven developer tooling, intelligent UX, and cutting-edge software engineering.",
     ],
   },
 ];
@@ -175,7 +160,7 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Mukteswar does.",
+      "I've never met a software engineer who truly cares about delivering exceptional craftsmanship and cutting-edge AI integration like Mukteswar does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -183,7 +168,7 @@ const testimonials: TTestimonial[] = [
   },
   {
     testimonial:
-      "After Mukteswar optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Mukteswar optimized our architecture and integrated intelligent systems, our platform performance and user engagement increased significantly.",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -193,16 +178,58 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "SEEMADRISHTI",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Real-time 9-channel tactical CCTV surveillance command matrix featuring 60 FPS AI computer vision overlay, ANPR license plate recognition, virtual tripwire alarms, and high-performance recorded archive scrubbing.",
     tags: [
       {
-        name: "react",
+        name: "typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "ai-vision",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: seemadrishti,
+    sourceCodeLink: "https://github.com/mukteshwar845/SEEMADRISHTI",
+  },
+  {
+    name: "KEYRUSH 3D",
+    description:
+      "Immersive 3D typing-racing game that turns typing practice into a high-speed racing competition. Compete against AI opponents, customize racecars, analyze WPM analytics, with full offline gameplay support.",
+    tags: [
+      {
+        name: "threejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "webgl",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: keyrush,
+    sourceCodeLink: "https://github.com/mukteshwar845/KEYRUSH-3D",
+  },
+  {
+    name: "ConvertX",
+    description:
+      "Fast, intelligent file conversion platform engineered for high-fidelity document layout, formatting, and content preservation across diverse document and media formats.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
         color: "green-text-gradient",
       },
       {
@@ -210,50 +237,8 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/mukteshwar845",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/mukteshwar845",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/mukteshwar845",
+    image: convertx,
+    sourceCodeLink: "https://github.com/mukteshwar845/ConvertX",
   },
 ];
 
