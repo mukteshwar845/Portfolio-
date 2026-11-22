@@ -14,6 +14,7 @@ import {
 } from "./components";
 import { useEffect } from "react";
 import { config } from "./constants/config";
+import { herobg } from "./assets";
 
 const App = () => {
   useEffect(() => {
@@ -24,8 +25,11 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="bg-primary relative z-0">
-        <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
+      <div className="bg-primary relative z-0 min-h-screen">
+        <div
+          style={{ backgroundImage: `url(${herobg})` }}
+          className="bg-primary bg-cover bg-center bg-no-repeat"
+        >
           <Navbar />
           <Hero />
         </div>

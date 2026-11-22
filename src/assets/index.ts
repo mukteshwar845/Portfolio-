@@ -1,6 +1,7 @@
 import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
+import herobg from "./herobg.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.svg";
@@ -62,6 +63,7 @@ export {
   logo,
   backend,
   creator,
+  herobg,
   mobile,
   web,
   github,
