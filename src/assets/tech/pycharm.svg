@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="28" fill="#1E1F22"/>
+  <defs>
+    <linearGradient id="pc-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#21D789"/>
+      <stop offset="100%" stop-color="#0079FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="22" y="22" width="84" height="84" rx="14" fill="url(#pc-grad)"/>
+  <rect x="26" y="26" width="76" height="76" rx="10" fill="#000000"/>
+  <text x="36" y="62" fill="#21D789" font-family="system-ui, sans-serif" font-size="28" font-weight="900">P</text>
+  <text x="56" y="84" fill="#0079FF" font-family="system-ui, sans-serif" font-size="28" font-weight="900">C</text>
+  <rect x="36" y="90" width="32" height="4" fill="#FFFFFF"/>
+</svg>

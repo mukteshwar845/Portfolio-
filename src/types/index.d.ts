@@ -33,7 +33,7 @@ export type TTechnology = Required<Omit<TCommonProps, "title">>;
 export type TTechSkill = {
   name: string;
   icon: string;
-  category: "web" | "database" | "aiml" | "tools" | "design";
+  category: "web" | "database" | "aiml" | "tools" | "design" | "editors";
   categoryLabel: string;
   tag: string;
   featuredIn3D?: boolean;

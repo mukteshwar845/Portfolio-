@@ -45,6 +45,13 @@ import {
   anaconda,
   canva,
   stitch,
+  vscode,
+  colab,
+  eclipse,
+  pycharm,
+  jupyternotebook,
+  jupyterlab,
+  antigravity,
   seemadrishti,
   keyrush,
   convertx,
@@ -92,6 +99,7 @@ export const techCategories: TTechCategory[] = [
   { id: "database", title: "Databases", icon: "🗄️" },
   { id: "aiml", title: "AI/ML & Data Science", icon: "🤖" },
   { id: "tools", title: "Tools & Deployment", icon: "🛠️" },
+  { id: "editors", title: "Code Editors & IDEs", icon: "💻" },
   { id: "design", title: "UI/UX & Design", icon: "🎨" },
 ];
 
@@ -331,6 +339,57 @@ export const techSkills: TTechSkill[] = [
     category: "design",
     categoryLabel: "UI/UX & Design",
     tag: "Design Systems",
+  },
+
+  // 💻 Code Editors & Environments
+  {
+    name: "VS Code",
+    icon: vscode,
+    category: "editors",
+    categoryLabel: "Editors & IDEs",
+    tag: "Primary Code Editor",
+  },
+  {
+    name: "Google Colab",
+    icon: colab,
+    category: "editors",
+    categoryLabel: "Editors & IDEs",
+    tag: "Cloud AI Notebooks",
+  },
+  {
+    name: "Eclipse",
+    icon: eclipse,
+    category: "editors",
+    categoryLabel: "Editors & IDEs",
+    tag: "Java Enterprise IDE",
+  },
+  {
+    name: "PyCharm",
+    icon: pycharm,
+    category: "editors",
+    categoryLabel: "Editors & IDEs",
+    tag: "Python IDE",
+  },
+  {
+    name: "Jupyter Notebook",
+    icon: jupyternotebook,
+    category: "editors",
+    categoryLabel: "Editors & IDEs",
+    tag: "Interactive Data Science",
+  },
+  {
+    name: "JupyterLab",
+    icon: jupyterlab,
+    category: "editors",
+    categoryLabel: "Editors & IDEs",
+    tag: "Advanced Notebooks",
+  },
+  {
+    name: "Antigravity",
+    icon: antigravity,
+    category: "editors",
+    categoryLabel: "Editors & IDEs",
+    tag: "Agentic AI IDE",
   },
 ];
 

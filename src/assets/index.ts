@@ -45,6 +45,13 @@ import render from "./tech/render.svg";
 import anaconda from "./tech/anaconda.svg";
 import canva from "./tech/canva.svg";
 import stitch from "./tech/stitch.svg";
+import vscode from "./tech/vscode.svg";
+import colab from "./tech/colab.svg";
+import eclipse from "./tech/eclipse.svg";
+import pycharm from "./tech/pycharm.svg";
+import jupyternotebook from "./tech/jupyternotebook.svg";
+import jupyterlab from "./tech/jupyterlab.svg";
+import antigravity from "./tech/antigravity.svg";
 
 import seemadrishti from "./seemadrishti.svg";
 import keyrush from "./keyrush.svg";
@@ -97,6 +104,13 @@ export {
   anaconda,
   canva,
   stitch,
+  vscode,
+  colab,
+  eclipse,
+  pycharm,
+  jupyternotebook,
+  jupyterlab,
+  antigravity,
   seemadrishti,
   keyrush,
   convertx,
