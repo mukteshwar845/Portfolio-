@@ -1,5 +1,13 @@
 User-agent: *
 Allow: /
 
+# Block internal build artifacts
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: /src/
+
+# Sitemap location
 Sitemap: https://mukteshwar845.github.io/Portfolio-/sitemap.xml
 
+# Crawl delay (optional — be polite to crawlers)
+Crawl-delay: 10
