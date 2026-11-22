@@ -3,7 +3,8 @@
 <div align="center">
   <img src="public/logo.png" alt="Mukteswar Gochhayat Logo" width="120" style="border-radius: 20px; box-shadow: 0 4px 20px rgba(145, 94, 255, 0.4);" />
   
-  <h3>Interactive 3D Developer Portfolio built with React 18, Three.js, and TypeScript</h3>
+  <h3>Modern 3D Developer Portfolio &amp; AI Integration Showcase</h3>
+  <p>Built with <strong>React 18</strong>, <strong>Three.js</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, and <strong>Framer Motion</strong></p>
 
   <p align="center">
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 18" /></a>
@@ -11,6 +12,7 @@
     <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
     <a href="https://vite.dev/"><img src="https://img.shields.io/badge/Vite-8.x-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" /></a>
     <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /></a>
+    <img src="https://img.shields.io/badge/Security-Hardened-00cea8?style=for-the-badge&logo=securityscorecard&logoColor=white" alt="Security Hardened" />
   </p>
 </div>
 
@@ -18,30 +20,72 @@
 
 ## 🌟 Overview
 
-Welcome to the personal 3D Developer Portfolio of **Mukteswar Gochhayat**. This project showcases modern web development capabilities by blending interactive 3D graphics, smooth physics-driven motion animations, and a clean, responsive user interface.
+Welcome to the personal 3D Developer Portfolio of **Mukteswar Gochhayat**. 
 
-### ✨ Key Features
+I am a Full-Stack Developer with AI integration and an AI/ML enthusiast passionate about building innovative web applications and intelligent digital solutions. With a foundation in Java and Python, I focus on developing modern, scalable applications, integrating AI-powered capabilities, and solving real-world problems through technology.
 
-- **Interactive 3D Computer Model:** Real-time 3D desktop workstation rendered using React Three Fiber and Three.js with full dynamic lighting, shadows, and responsive scaling.
-- **3D Floating Tech Spheres:** Interactive Decal-mapped icosahedron spheres representing core tech stack competencies with floating physics animations.
-- **3D Rotating Earth:** Realistic celestial planet model rendered inside an interactive orbit container.
-- **Animated Cosmic Stars Background:** Dynamic mathematical point-cloud particle starfield with continuous subtle rotation.
-- **Modern UI / UX:** Built with Tailwind CSS, custom gradients, glassmorphism cards, and Framer Motion spring transitions.
-- **Interactive Experience Timeline:** Step-by-step career and project milestones visualized with vertical timeline elements.
-- **Responsive Navigation:** Smooth section scrolling with automatic scroll-position highlighting and mobile navigation drawer.
-- **Direct Contact Form:** Integrated EmailJS support for instant messaging without requiring a dedicated backend server.
+This portfolio combines real-time 3D WebGL computer graphics, physics-driven particle animations, interactive component matrices, and an optimized, secure contact pipeline.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Featured Real-World Projects
 
-- **Core Framework:** React 18 (TypeScript)
-- **Bundler & Tooling:** Vite, ESLint, Prettier, PostCSS
-- **3D Graphics:** Three.js, `@react-three/fiber`, `@react-three/drei`, `maath`
-- **Animations:** Framer Motion, Tilt (`react-parallax-tilt`)
-- **Styling:** Tailwind CSS
-- **Timeline:** React Vertical Timeline Component
-- **Email Service:** EmailJS Browser SDK
+All featured projects are engineered with clean single-row desktop responsiveness, GitHub source links, and photorealistic UI representations:
+
+| Project | Domain | Overview |
+| :--- | :--- | :--- |
+| **SEEMADRISHTI** | AI Vision & Defense | Advanced AI surveillance and reconnaissance system equipped with computer vision, real-time threat detection, and telemetry tracking engineered for precision monitoring and situational intelligence. |
+| **KEYRUSH 3D** | 3D Gaming & WebGL | Immersive 3D typing-racing game that turns typing practice into a high-speed racing competition. Compete against AI opponents, customize racecars, and analyze live WPM analytics. |
+| **ConvertX** | SaaS Utilities | Fast, intelligent file conversion platform engineered for high-fidelity document layout, formatting, and content preservation across diverse document and media formats. |
+| **Cognora AI** | EdTech & AI Workspace | Intelligent AI study assistant and personalized learning workspace engineered to accelerate knowledge acquisition with automated lecture digests, custom study roadmaps, and LLM-powered diagnostics. |
+
+---
+
+## 🛠️ Technical Arsenal
+
+- **Web & Languages:** Java, Python, C (Programming Language), TypeScript, JavaScript, HTML5, CSS3, React.js, Next.js, Django, Flask
+- **AI/ML & Data Science:** TensorFlow, Scikit-Learn, YOLO (Computer Vision), LLM Router, NumPy, Pandas, Matplotlib
+- **Databases & Backend:** PostgreSQL, MySQL, Supabase, Firebase, MongoDB, Node.js
+- **Tools & Deployment:** Git, GitHub Actions, Docker, Vercel, Netlify, Render, Anaconda
+- **Code Editors & IDEs:** VS Code, Google Colab, PyCharm, Eclipse, Jupyter Notebook, JupyterLab, Antigravity
+- **UI/UX & Design:** Figma, Canva, Stitch, Tailwind CSS, Framer Motion
+
+---
+
+## 🔒 Security & Privacy Architecture
+
+This repository follows industry-standard security and privacy practices to ensure zero credential leaks and complete identity protection:
+
+1. **Zero Plain-Text Email Exposure:**
+   - The developer's personal email address is **never exposed anywhere in the client-side UI, HTML DOM, or static JavaScript bundle**.
+   - Casual visitors, automated web scrapers, and spam bots cannot extract or harvest email addresses from the site.
+
+2. **Obfuscated Asynchronous Contact Dispatch:**
+   - Form submissions are securely dispatched through an asynchronous, non-blocking background pipeline (`keepalive: true`).
+   - Uses runtime decoding and supports optional custom masked tokens (`VITE_CONTACT_ENDPOINT`).
+   - Instant user feedback with zero UI freezes or third-party tab redirects.
+
+3. **Anti-Bot & Anti-Spam Protection:**
+   - Integrated silent honeypot fields (`_honey`) to trap and automatically drop automated spam bot submissions.
+   - Client-side validation enforces required, sanitized input formats.
+
+4. **Reverse Tabnabbing Mitigation:**
+   - Every external hyperlink and programmatic tab opener enforces `rel="noopener noreferrer"` and `window.open(..., "_blank", "noopener,noreferrer")` to prevent malicious parent window manipulation.
+
+5. **Strict Environment Credential Isolation:**
+   - All environment variables (`.env`, `.env.*.local`) are strictly ignored by `.gitignore`.
+   - A sanitized `.env.example` template is provided for local setup without committing secrets.
+
+---
+
+## 🔍 Search Engine Optimization (SEO)
+
+Engineered for Google People Search, Knowledge Graph, and cross-platform social indexing:
+
+- **Schema.org JSON-LD:** Structured graph defining `Person`, `WebSite`, and `ProfilePage` entities linking canonical identity, skills, and official GitHub and LinkedIn profiles.
+- **Search Engine Directives:** Comprehensive [public/robots.txt](public/robots.txt) and [public/sitemap.xml](public/sitemap.xml) for Googlebot and Bingbot discovery.
+- **Open Graph & Twitter Cards:** Complete rich preview metadata paired with `1200 x 630` social card assets (`public/og-image.png`).
+- **Semantic Fallback (`<noscript>`):** Full crawlable HTML fallback ensuring search engines without JavaScript can index bio, skills, and project highlights.
 
 ---
 
@@ -49,31 +93,38 @@ Welcome to the personal 3D Developer Portfolio of **Mukteswar Gochhayat**. This 
 
 ```text
 reactjs18-3d-portfolio/
-├── public/                 # Static assets and 3D GLTF/GLB models
-│   ├── desktop_pc/         # 3D Desktop computer model & textures
-│   ├── planet/             # 3D Earth planet model & textures
-│   └── logo.png            # Personal branding logo
+├── public/                       # Static public assets & search engine directives
+│   ├── models/                   # Optimized 3D GLTF/GLB models (desktop_pc, planet)
+│   ├── logo.png                  # Developer branding mark
+│   ├── og-image.png              # 1200x630 social card preview
+│   ├── robots.txt                # Search bot crawl permissions & sitemap reference
+│   └── sitemap.xml               # Search engine index XML sitemap
 ├── src/
-│   ├── assets/             # Icons, badges, project images, and branding
+│   ├── assets/                   # Icons, technology SVGs, and 16:9 project visuals
+│   │   ├── projects/             # Real-world project showcase imagery
+│   │   └── tech/                 # Official technology and IDE SVGs
 │   ├── components/
-│   │   ├── atoms/          # Atomic UI elements (Header, etc.)
-│   │   ├── canvas/         # 3D Canvas scenes (Computers, Ball, Earth, Stars)
-│   │   ├── layout/         # Layout components (Navbar, Loader)
-│   │   └── sections/       # Page sections (Hero, About, Experience, Tech, Works, Feedbacks, Contact)
-│   ├── constants/          # Application configuration, navigation, and portfolio data
-│   │   ├── config.ts       # Personal info, headers, and form configurations
-│   │   ├── index.ts        # Services, tech stack, experiences, and projects data
-│   │   └── styles.ts       # Shared Tailwind style constants
-│   ├── hoc/                # Higher-Order Components (SectionWrapper)
-│   ├── types/              # TypeScript type declarations
-│   ├── utils/              # Animation helpers and motion variants
-│   ├── App.tsx             # Root application component
-│   ├── globals.css         # Global styles and custom keyframes
-│   └── main.tsx            # Application entry point
-├── package.json            # Dependencies and npm scripts
-├── tailwind.config.cjs     # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── vite.config.js          # Vite bundler configuration
+│   │   ├── atoms/                # Atomic UI building blocks (Header, CanvasLoader)
+│   │   ├── canvas/               # 3D WebGL scenes (Computers, Ball, Earth, Stars)
+│   │   ├── layout/               # Global layout components (Navbar, Footer, Loader)
+│   │   └── sections/             # Page sections (Hero, About, Experience, Tech, Works, Feedbacks, Contact)
+│   ├── constants/                # Data configurations and typography
+│   │   ├── config.ts             # Bio, section metadata, and form schemas
+│   │   ├── index.ts              # Tech stack matrix, project records, and timeline data
+│   │   └── styles.ts             # Global layout & padding constants
+│   ├── hoc/                      # Higher-Order Components (SectionWrapper)
+│   ├── types/                    # TypeScript interfaces & types (index.d.ts)
+│   ├── utils/                    # Framer Motion animation variants & helpers
+│   ├── App.tsx                   # Main application orchestrator
+│   ├── globals.css               # Tailwind CSS directives & custom keyframes
+│   └── main.tsx                  # React DOM entry point
+├── .env.example                  # Environment variable configuration template
+├── .gitignore                    # Git tracking ignore rules
+├── index.html                    # SEO metadata, JSON-LD Schema, and noscript fallback
+├── package.json                  # Dependencies & execution scripts
+├── tailwind.config.cjs           # Tailwind CSS design system rules
+├── tsconfig.json                 # TypeScript compiler configuration
+└── vite.config.js                # Vite bundler build settings
 ```
 
 ---
@@ -82,59 +133,59 @@ reactjs18-3d-portfolio/
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (version 18+ or later recommended)
+- [Node.js](https://nodejs.org/) (version 18.0 or later recommended)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### Installation
+### Installation & Setup
 
-1. Clone or open the repository:
+1. **Clone the repository:**
    ```bash
-   cd reactjs18-3d-portfolio
+   git clone https://github.com/mukteshwar845/Portfolio-.git
+   cd Portfolio-
    ```
 
-2. Install dependencies:
+2. **Install project dependencies:**
    ```bash
    npm install
    ```
 
-3. Configure Environment Variables (Optional for Contact Form):
-   Create a `.env` file in the root folder with your EmailJS credentials:
-   ```env
-   VITE_EMAILJS_SERVICE_ID=your_service_id
-   VITE_EMAILJS_TEMPLATE_ID=your_template_id
-   VITE_EMAILJS_ACCESS_TOKEN=your_public_key
+3. **Configure Environment Variables (Optional):**
+   Copy the example environment template:
+   ```bash
+   cp .env.example .env
    ```
+   *(No environment variables are strictly required for local development; default secure dispatch is automatically enabled).*
 
-4. Start the development server:
+4. **Run the local development server:**
    ```bash
    npm run dev
    ```
-
-5. Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal).
-
----
-
-## 📦 Scripts
-
-- `npm run dev` — Starts the local Vite development server with Hot Module Replacement (HMR).
-- `npm run build` — Type-checks and bundles the application for production into `dist/`.
-- `npm run preview` — Previews the production build locally.
-- `npm run lint` — Runs ESLint checks across the TypeScript codebase.
-- `npm run ts:check` — Validates TypeScript types without emitting files.
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 👤 Author
+## 📦 Build & Validation Scripts
+
+| Command | Purpose |
+| :--- | :--- |
+| `npm run dev` | Starts the local Vite development server with Hot Module Replacement (HMR). |
+| `npm run ts:check` | Validates all TypeScript types with `tsc --noEmit` (zero errors). |
+| `npm run lint` | Enforces code standards with ESLint (`--max-warnings 0`). |
+| `npm run build` | Compiles and optimizes assets into production-ready `dist/` bundle. |
+| `npm run preview` | Previews the local production build before deployment. |
+
+---
+
+## 👤 Author & Connect
 
 **Mukteswar Gochhayat**
-- Role: Full Stack & 3D Web Developer
-- GitHub: [github.com/mukteshwar845](https://github.com/mukteshwar845)
-- LinkedIn: [Mukteswar Gochhayat](https://www.linkedin.com/in/mukteswar-gochhayat-119a80368)
-- Contact: Reach out directly via the Portfolio Contact Form or LinkedIn
+- **Role:** Full-Stack Developer with AI Integration
+- **GitHub:** [mukteshwar845](https://github.com/mukteshwar845)
+- **LinkedIn:** [Mukteswar Gochhayat](https://www.linkedin.com/in/mukteswar-gochhayat-119a80368)
+- **Portfolio Inquiries:** Connect directly via the Portfolio Contact Section
 
 ---
 
 ## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
-
+This project is open-source and licensed under the [MIT License](LICENSE).

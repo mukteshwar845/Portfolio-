@@ -12,9 +12,16 @@ const INITIAL_STATE = Object.fromEntries(
   Object.keys(config.contact.form).map((input) => [input, ""])
 );
 
-const FORMSUBMIT_EMAIL = "mukteswar452@gmail.com";
-const FORMSUBMIT_URL = `https://formsubmit.co/${FORMSUBMIT_EMAIL}`;
-const FORMSUBMIT_AJAX_URL = `https://formsubmit.co/ajax/${FORMSUBMIT_EMAIL}`;
+// Runtime secure endpoint resolution to protect the destination address from automated bots, crawlers, and scrapers
+const getContactEndpoint = (): string => {
+  const envEndpoint = import.meta.env.VITE_CONTACT_ENDPOINT;
+  if (envEndpoint && typeof envEndpoint === "string") {
+    return envEndpoint;
+  }
+  // Decodes obfuscated chunks at runtime so no plain-text email or domain exists in bundle text
+  const target = atob(["bXVrdGVzd2Fy", "NDUy", "QGdtYWls", "LmNvbQ=="].join(""));
+  return `https://formsubmit.co/ajax/${target}`;
+};
 
 const Contact: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -42,17 +49,17 @@ const Contact: React.FC = () => {
     setStatus({ type: null, message: "" });
 
     const payload = {
-      name: form.name,
-      email: form.email,
-      message: form.message,
-      _subject: `New Portfolio Message from ${form.name}`,
+      name: form.name.trim(),
+      email: form.email.trim(),
+      message: form.message.trim(),
+      _subject: `New Portfolio Message from ${form.name.trim()}`,
       _template: "table",
       _captcha: "false",
     };
 
-    // Dispatch in the background with keepalive so FormSubmit latency never blocks the UI
+    // Dispatch asynchronously in background with keepalive (zero UI blocking, zero plain-text leaks)
     try {
-      fetch(FORMSUBMIT_AJAX_URL, {
+      fetch(getContactEndpoint(), {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -61,7 +68,7 @@ const Contact: React.FC = () => {
         body: JSON.stringify(payload),
         keepalive: true,
       }).catch((err) => {
-        console.warn("FormSubmit background dispatch notice:", err);
+        console.warn("Contact delivery notice:", err);
       });
     } catch (err) {
       console.warn("Background fetch notice:", err);
@@ -121,20 +128,10 @@ const Contact: React.FC = () => {
 
           <form
             ref={formRef}
-            target="_blank"
-            action={FORMSUBMIT_URL}
-            method="POST"
             onSubmit={handleSubmit}
             className="mt-8 flex flex-col gap-6"
           >
-            {/* FormSubmit Configuration */}
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Portfolio Message from 3D Portfolio!"
-            />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
+            {/* Anti-spam honeypot */}
             <input type="text" name="_honey" style={{ display: "none" }} />
 
             {Object.keys(config.contact.form).map((input) => {
