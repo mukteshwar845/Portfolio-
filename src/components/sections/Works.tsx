@@ -31,7 +31,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
         className="w-full h-full"
       >
         <div className="bg-tertiary w-full h-full rounded-2xl p-4 flex flex-col border border-white/5 hover:border-[#915eff]/40 transition-all duration-300 shadow-card">
-          <div className="relative h-[180px] w-full">
+          <div className="relative h-[160px] xs:h-[180px] w-full">
             <img
               src={image}
               alt={name}

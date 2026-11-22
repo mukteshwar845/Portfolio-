@@ -11,6 +11,42 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  /* Remove tap highlight on mobile */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent horizontal overflow on all mobile viewports */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Smooth momentum scrolling on iOS */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure images never exceed their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better touch targets — min 44px per Apple HIG */
+button,
+a,
+[role="button"] {
+  min-height: 44px;
+  touch-action: manipulation;
+}
+
+/* Exception: icon-only small buttons in nav/footer */
+nav button,
+nav a,
+footer a {
+  min-height: unset;
 }
 
 .hash-span {

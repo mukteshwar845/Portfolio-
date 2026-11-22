@@ -29,7 +29,7 @@ const Tech: React.FC = () => {
       </motion.p>
 
       {/* Category Filter Tabs */}
-      <div className="mt-10 flex flex-wrap items-center gap-2.5">
+      <div className="mt-10 flex flex-wrap items-center gap-2">
         {techCategories.map((cat) => {
           const isActive = activeCategory === cat.id;
           return (
@@ -37,13 +37,13 @@ const Tech: React.FC = () => {
               key={cat.id}
               type="button"
               onClick={() => setActiveCategory(cat.id)}
-              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-[13px] font-medium transition-all duration-300 ${
+              className={`flex items-center gap-1.5 px-3 py-2 xs:px-4 xs:py-2.5 rounded-xl text-[12px] xs:text-[13px] font-medium transition-all duration-300 touch-manipulation ${
                 isActive
                   ? "bg-[#915eff] text-white shadow-lg shadow-[#915eff]/30 font-semibold scale-105"
                   : "bg-tertiary/80 text-secondary hover:text-white hover:bg-tertiary border border-white/5"
               }`}
             >
-              <span className="text-base">{cat.icon}</span>
+              <span className="text-sm xs:text-base">{cat.icon}</span>
               <span>{cat.title}</span>
             </button>
           );
@@ -60,7 +60,7 @@ const Tech: React.FC = () => {
       {/* Skills Grid */}
       <motion.div
         layout
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+        className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 xs:gap-4"
       >
         <AnimatePresence>
           {filteredSkills.map((skill) => (
@@ -71,7 +71,7 @@ const Tech: React.FC = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.2 }}
-              className="group relative flex flex-col items-center justify-center p-5 rounded-2xl bg-[#151030]/80 backdrop-blur-md border border-white/5 hover:border-[#915eff]/50 hover:bg-[#1c1444] transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-[#915eff]/10"
+              className="group relative flex flex-col items-center justify-center p-3 xs:p-5 rounded-2xl bg-[#151030]/80 backdrop-blur-md border border-white/5 hover:border-[#915eff]/50 hover:bg-[#1c1444] transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-[#915eff]/10"
             >
               <div className="relative w-14 h-14 p-2.5 rounded-xl bg-black/40 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:border-[#915eff]/40 transition-all duration-300 shadow-inner">
                 <img

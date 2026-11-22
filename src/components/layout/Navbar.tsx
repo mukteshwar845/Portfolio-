@@ -64,7 +64,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="h-9 w-9 rounded-lg object-cover shadow-sm" />
-          <p className="flex cursor-pointer text-[18px] font-bold text-white">
+          <p className="flex cursor-pointer text-[15px] xs:text-[18px] font-bold text-white truncate max-w-[140px] xs:max-w-none">
             {config.html.fullName}
           </p>
         </Link>
@@ -123,7 +123,7 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="h-[28px] w-[28px] object-contain cursor-pointer"
+            className="h-[28px] w-[28px] object-contain cursor-pointer p-0.5"
             onClick={() => setToggle(!toggle)}
           />
 

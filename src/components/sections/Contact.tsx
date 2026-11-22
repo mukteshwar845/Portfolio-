@@ -174,7 +174,7 @@ const Contact: React.FC = () => {
             <button
               type="submit"
               disabled={loading}
-              className="bg-tertiary shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none transition-transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-tertiary shadow-primary w-full xs:w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none transition-transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
@@ -183,7 +183,7 @@ const Contact: React.FC = () => {
 
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="h-[350px] md:h-[550px] xl:h-auto xl:flex-1"
+          className="h-[280px] xs:h-[350px] md:h-[500px] xl:h-auto xl:flex-1"
         >
           <EarthCanvas />
         </motion.div>
