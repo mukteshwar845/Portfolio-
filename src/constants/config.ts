@@ -54,8 +54,7 @@ export const config: TConfig = {
   hero: {
     name: "Mukteswar",
     p: [
-      "I build full-stack applications, explore AI/ML technologies",
-      "and turn ideas into real-world solutions",
+      "I build full-stack applications, explore AI/ML technologies and turn ideas into real-world solutions",
     ],
   },
   contact: {

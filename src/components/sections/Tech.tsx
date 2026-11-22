@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { BallCanvas } from "../canvas";
 import { SectionWrapper } from "../../hoc";
-import {
-  technologies,
-  techSkills,
-  techCategories,
-} from "../../constants";
+import { techSkills, techCategories } from "../../constants";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { fadeIn } from "../../utils/motion";
@@ -33,54 +28,8 @@ const Tech: React.FC = () => {
         scalable database infrastructure, and robust production deployments.
       </motion.p>
 
-      {/* Interactive 3D Floating Stack Showcase */}
-      <div className="mt-12 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-4">
-        <div>
-          <h3 className="text-white text-[20px] font-bold flex items-center gap-2">
-            <span className="text-[#915eff]">✦</span> Core 3D Interactive Stack
-          </h3>
-          <p className="text-secondary text-[13px] mt-1">
-            Drag and rotate individual 3D spheres to inspect key technologies in real-time
-          </p>
-        </div>
-        <span className="text-[12px] font-mono text-[#915eff] bg-[#915eff]/10 border border-[#915eff]/20 px-3 py-1 rounded-full self-start sm:self-auto">
-          WebGL Interactive
-        </span>
-      </div>
-
-      <div className="flex flex-row flex-wrap justify-center gap-8 py-4">
-        {technologies.map((technology) => (
-          <div
-            className="flex flex-col items-center"
-            key={technology.name}
-          >
-            <div className="h-28 w-28">
-              <BallCanvas icon={technology.icon} />
-            </div>
-            <span className="text-[12px] font-medium text-secondary mt-1 tracking-wider uppercase">
-              {technology.name}
-            </span>
-          </div>
-        ))}
-      </div>
-
-      {/* Categorized Skills Directory */}
-      <div className="mt-16 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-4">
-        <div>
-          <h3 className="text-white text-[20px] font-bold flex items-center gap-2">
-            <span className="text-[#915eff]">◈</span> Full Technical Arsenal
-          </h3>
-          <p className="text-secondary text-[13px] mt-1">
-            Categorized directory of languages, frameworks, AI tools, databases & cloud systems
-          </p>
-        </div>
-        <div className="text-[12px] text-secondary font-mono">
-          Showing <span className="text-white font-bold">{filteredSkills.length}</span> technologies
-        </div>
-      </div>
-
       {/* Category Filter Tabs */}
-      <div className="flex flex-wrap items-center gap-2 mb-8">
+      <div className="mt-10 flex flex-wrap items-center gap-2.5">
         {techCategories.map((cat) => {
           const isActive = activeCategory === cat.id;
           return (
@@ -88,17 +37,24 @@ const Tech: React.FC = () => {
               key={cat.id}
               type="button"
               onClick={() => setActiveCategory(cat.id)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] font-medium transition-all duration-300 ${
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-[13px] font-medium transition-all duration-300 ${
                 isActive
-                  ? "bg-[#915eff] text-white shadow-lg shadow-[#915eff]/25 font-semibold"
-                  : "bg-tertiary/70 text-secondary hover:text-white hover:bg-tertiary border border-white/5"
+                  ? "bg-[#915eff] text-white shadow-lg shadow-[#915eff]/30 font-semibold scale-105"
+                  : "bg-tertiary/80 text-secondary hover:text-white hover:bg-tertiary border border-white/5"
               }`}
             >
-              <span>{cat.icon}</span>
+              <span className="text-base">{cat.icon}</span>
               <span>{cat.title}</span>
             </button>
           );
         })}
+      </div>
+
+      {/* Count Indicator */}
+      <div className="mt-4 mb-8 text-[13px] text-secondary font-mono flex items-center justify-between">
+        <span>
+          Showing <span className="text-white font-bold">{filteredSkills.length}</span> technologies
+        </span>
       </div>
 
       {/* Skills Grid */}
