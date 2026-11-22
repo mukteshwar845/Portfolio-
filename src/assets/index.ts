@@ -56,7 +56,7 @@ import antigravity from "./tech/antigravity.svg";
 import seemadrishti from "./projects/seemadrishti.jpg";
 import keyrush from "./projects/keyrush.jpg";
 import convertx from "./projects/convertx.jpg";
-import cognora from "./projects/cognora.svg";
+import cognora from "./projects/cognora.jpg";
 
 export {
   logo,
