@@ -77,11 +77,7 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm a Full Stack Developer with AI Integration, specializing in TypeScript, JavaScript, Python, and modern web frameworks like React. I engineer scalable, high-performance applications, integrate intelligent AI solutions, and collaborate closely to turn ambitious ideas into reality. Let's work together to build impactful solutions!`,
     },
     experience: {
       p: "What I have done so far",

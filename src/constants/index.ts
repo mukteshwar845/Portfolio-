@@ -12,6 +12,7 @@ import type {
 import {
   mobile,
   backend,
+  creator,
   web,
   javascript,
   typescript,
@@ -65,6 +66,10 @@ export const navLinks: TNavLink[] = [
 ];
 
 const services: TService[] = [
+  {
+    title: "Full Stack Developer with AI Integration",
+    icon: creator,
+  },
   {
     title: "Web Developer",
     icon: web,
