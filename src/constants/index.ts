@@ -24,6 +24,7 @@ import {
   docker,
   python,
   java,
+  cLang,
   django,
   flask,
   firebase,
@@ -110,6 +111,13 @@ export const techSkills: TTechSkill[] = [
     categoryLabel: "Web & Languages",
     tag: "Enterprise & OOP",
     featuredIn3D: true,
+  },
+  {
+    name: "C",
+    icon: cLang,
+    category: "web",
+    categoryLabel: "Web & Languages",
+    tag: "Programming Language",
   },
   {
     name: "JavaScript",

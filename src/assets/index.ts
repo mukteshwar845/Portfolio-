@@ -25,6 +25,7 @@ import threejs from "./tech/threejs.svg";
 
 import python from "./tech/python.svg";
 import java from "./tech/java.svg";
+import cLang from "./tech/c.svg";
 import django from "./tech/django.svg";
 import flask from "./tech/flask.svg";
 import firebase from "./tech/firebase.svg";
@@ -75,6 +76,7 @@ export {
   threejs,
   python,
   java,
+  cLang,
   django,
   flask,
   firebase,
