@@ -40,5 +40,10 @@
     "tailwindcss": "^3.2.6",
     "typescript": "^5.2.2",
     "vite": "^8.3.8"
+  },
+  "overrides": {
+    "@vitejs/plugin-react": {
+      "vite": "$vite"
+    }
   }
 }
