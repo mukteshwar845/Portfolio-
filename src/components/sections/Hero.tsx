@@ -15,7 +15,10 @@ const Hero: React.FC = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1
+            className={`${styles.heroHeadText} text-white`}
+            aria-label="Hi, I'm Mukteswar Gochhayat"
+          >
             Hi, I'm <span className="text-[#915EFF]">{config.hero.name}</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2 max-w-3xl`}>

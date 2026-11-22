@@ -44,7 +44,7 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "Mukteswar Gochhayat | 3D Portfolio",
+    title: "Mukteswar Gochhayat | Full-Stack Developer & AI Specialist | 3D Portfolio",
     fullName: "Mukteswar Gochhayat",
   },
   social: {

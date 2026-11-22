@@ -149,6 +149,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     placeholder={placeholder}
                     required
+                    autoComplete={input === "email" ? "email" : input === "name" ? "name" : "off"}
                     className="bg-tertiary placeholder:text-secondary rounded-lg border-none px-6 py-4 font-medium text-white outline-none focus:ring-2 focus:ring-[#915EFF]/50 transition-all"
                     {...(input === "message" && { rows: 5 })}
                   />
