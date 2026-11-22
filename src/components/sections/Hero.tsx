@@ -47,11 +47,11 @@ const Hero: React.FC = () => {
             </a>
 
             <a
-              href={`mailto:${config.social.email}`}
+              href="#contact"
               className="flex items-center gap-2 rounded-xl border border-white/20 bg-tertiary px-5 py-2.5 text-[14px] font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:border-[#00cea8] hover:bg-[#00cea8]/10"
             >
-              <img src={mail} alt="Email" className="h-4 w-4 object-contain" />
-              <span>Email Me</span>
+              <img src={mail} alt="Message" className="h-4 w-4 object-contain" />
+              <span>Get in Touch</span>
             </a>
           </div>
         </div>

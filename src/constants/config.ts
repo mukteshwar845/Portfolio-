@@ -8,12 +8,10 @@ type TConfig = {
   html: {
     title: string;
     fullName: string;
-    email: string;
   };
   social: {
     github: string;
     linkedin: string;
-    email: string;
   };
   hero: {
     name: string;
@@ -47,12 +45,10 @@ export const config: TConfig = {
   html: {
     title: "Mukteswar Gochhayat | 3D Portfolio",
     fullName: "Mukteswar Gochhayat",
-    email: "mukteswar452@gmail.com",
   },
   social: {
     github: "https://github.com/mukteshwar845",
     linkedin: "https://www.linkedin.com/in/mukteswar-gochhayat-119a80368",
-    email: "mukteswar452@gmail.com",
   },
   hero: {
     name: "Mukteswar",

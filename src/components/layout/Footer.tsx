@@ -46,12 +46,12 @@ export const Footer: React.FC = () => {
           </a>
 
           <a
-            href={`mailto:${config.social.email}`}
+            href="#contact"
             className="flex h-10 w-10 items-center justify-center rounded-full bg-tertiary border border-white/10 text-[#00cea8] transition-all hover:scale-110 hover:border-[#00cea8] hover:bg-[#00cea8]/20"
-            aria-label="Email"
-            title="Send Email"
+            aria-label="Contact"
+            title="Send a Message"
           >
-            <img src={mail} alt="Email" className="h-5 w-5 object-contain" />
+            <img src={mail} alt="Message" className="h-5 w-5 object-contain" />
           </a>
         </div>
       </div>

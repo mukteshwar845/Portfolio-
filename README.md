@@ -130,7 +130,7 @@ reactjs18-3d-portfolio/
 - Role: Full Stack & 3D Web Developer
 - GitHub: [github.com/mukteshwar845](https://github.com/mukteshwar845)
 - LinkedIn: [Mukteswar Gochhayat](https://www.linkedin.com/in/mukteswar-gochhayat-119a80368)
-- Email: [mukteswar452@gmail.com](mailto:mukteswar452@gmail.com)
+- Contact: Reach out directly via the Portfolio Contact Form or LinkedIn
 
 ---
 

@@ -108,12 +108,12 @@ const Navbar = () => {
               <img src={linkedin} alt="LinkedIn" className="h-5 w-5 object-contain text-[#0077b5]" />
             </a>
             <a
-              href={`mailto:${config.social.email}`}
+              href="#contact"
               className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 transition-all duration-200 hover:scale-110 hover:border-[#00cea8] hover:bg-[#00cea8]/20"
-              aria-label="Email Me"
-              title="Send Direct Email"
+              aria-label="Send Message"
+              title="Send a Message"
             >
-              <img src={mail} alt="Email" className="h-5 w-5 object-contain" />
+              <img src={mail} alt="Message" className="h-5 w-5 object-contain" />
             </a>
           </div>
         </div>
@@ -155,7 +155,7 @@ const Navbar = () => {
                 href={config.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/10"
+                className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/10"
                 aria-label="GitHub"
               >
                 <img src={github} alt="GitHub" className="h-4 w-4 object-contain" />
@@ -164,17 +164,18 @@ const Navbar = () => {
                 href={config.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/10"
+                className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/10"
                 aria-label="LinkedIn"
               >
                 <img src={linkedin} alt="LinkedIn" className="h-4 w-4 object-contain" />
               </a>
               <a
-                href={`mailto:${config.social.email}`}
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/10"
-                aria-label="Email"
+                href="#contact"
+                className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/10"
+                aria-label="Contact"
+                onClick={() => setToggle(false)}
               >
-                <img src={mail} alt="Email" className="h-4 w-4 object-contain" />
+                <img src={mail} alt="Contact" className="h-4 w-4 object-contain" />
               </a>
             </div>
           </div>

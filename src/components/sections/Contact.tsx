@@ -7,7 +7,7 @@ import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
-import { github, linkedin, mail } from "../../assets";
+import { github, linkedin } from "../../assets";
 
 const INITIAL_STATE = Object.fromEntries(
   Object.keys(config.contact.form).map((input) => [input, ""])
@@ -45,7 +45,6 @@ const Contact: React.FC = () => {
           form_name: form.name,
           to_name: config.html.fullName,
           from_email: form.email,
-          to_email: config.html.email,
           message: form.message,
         },
         emailjsConfig.accessToken
@@ -61,7 +60,7 @@ const Contact: React.FC = () => {
           setLoading(false);
 
           console.log(error);
-          alert("Something went wrong.");
+          alert("Something went wrong. Please connect via LinkedIn or GitHub.");
         }
       );
   };
@@ -77,37 +76,28 @@ const Contact: React.FC = () => {
         >
           <Header useMotion={false} {...config.contact} />
 
-          {/* Direct Social & Email Quick Links */}
+          {/* Direct Social Links (No private email exposed in frontend) */}
           <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href={`mailto:${config.social.email}`}
-              className="flex items-center gap-2 rounded-lg border border-white/10 bg-tertiary px-3.5 py-2 text-[13px] font-medium text-white transition-all hover:border-[#00cea8] hover:bg-[#00cea8]/10"
-              title="Direct Email"
-            >
-              <img src={mail} alt="Email" className="h-4 w-4 object-contain" />
-              <span>{config.social.email}</span>
-            </a>
-
             <a
               href={config.social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-lg border border-white/10 bg-tertiary px-3.5 py-2 text-[13px] font-medium text-white transition-all hover:border-[#0077b5] hover:bg-[#0077b5]/10"
-              title="LinkedIn Profile"
+              className="flex items-center gap-2 rounded-lg border border-white/10 bg-tertiary px-4 py-2.5 text-[14px] font-medium text-white transition-all hover:border-[#0077b5] hover:bg-[#0077b5]/10"
+              title="Connect on LinkedIn"
             >
-              <img src={linkedin} alt="LinkedIn" className="h-4 w-4 object-contain" />
-              <span>LinkedIn</span>
+              <img src={linkedin} alt="LinkedIn" className="h-4 w-4 object-contain text-[#0077b5]" />
+              <span>Connect on LinkedIn</span>
             </a>
 
             <a
               href={config.social.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-lg border border-white/10 bg-tertiary px-3.5 py-2 text-[13px] font-medium text-white transition-all hover:border-[#915EFF] hover:bg-[#915EFF]/10"
-              title="GitHub Profile"
+              className="flex items-center gap-2 rounded-lg border border-white/10 bg-tertiary px-4 py-2.5 text-[14px] font-medium text-white transition-all hover:border-[#915EFF] hover:bg-[#915EFF]/10"
+              title="View GitHub Profile"
             >
               <img src={github} alt="GitHub" className="h-4 w-4 object-contain" />
-              <span>GitHub</span>
+              <span>View GitHub</span>
             </a>
           </div>
 
@@ -138,9 +128,9 @@ const Contact: React.FC = () => {
             })}
             <button
               type="submit"
-              className="bg-tertiary shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none"
+              className="bg-tertiary shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none transition-transform hover:scale-105"
             >
-              {loading ? "Sending..." : "Send"}
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
         </motion.div>
