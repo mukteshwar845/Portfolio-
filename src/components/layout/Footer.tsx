@@ -56,9 +56,9 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="mx-auto mt-8 max-w-7xl px-6 text-center text-[13px] text-secondary sm:px-16">
+      <div className="mx-auto mt-8 max-w-7xl px-6 text-center text-[14px] text-secondary sm:px-16">
         <p>
-          © {new Date().getFullYear()} {config.html.fullName}. Built with React, Three.js & Tailwind CSS.
+          © {new Date().getFullYear()} {config.html.fullName}. All Rights Reserved.
         </p>
       </div>
     </footer>
