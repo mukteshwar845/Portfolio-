@@ -7,6 +7,7 @@ import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
+import { github, linkedin, mail } from "../../assets";
 
 const INITIAL_STATE = Object.fromEntries(
   Object.keys(config.contact.form).map((input) => [input, ""])
@@ -76,10 +77,44 @@ const Contact: React.FC = () => {
         >
           <Header useMotion={false} {...config.contact} />
 
+          {/* Direct Social & Email Quick Links */}
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a
+              href={`mailto:${config.social.email}`}
+              className="flex items-center gap-2 rounded-lg border border-white/10 bg-tertiary px-3.5 py-2 text-[13px] font-medium text-white transition-all hover:border-[#00cea8] hover:bg-[#00cea8]/10"
+              title="Direct Email"
+            >
+              <img src={mail} alt="Email" className="h-4 w-4 object-contain" />
+              <span>{config.social.email}</span>
+            </a>
+
+            <a
+              href={config.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-lg border border-white/10 bg-tertiary px-3.5 py-2 text-[13px] font-medium text-white transition-all hover:border-[#0077b5] hover:bg-[#0077b5]/10"
+              title="LinkedIn Profile"
+            >
+              <img src={linkedin} alt="LinkedIn" className="h-4 w-4 object-contain" />
+              <span>LinkedIn</span>
+            </a>
+
+            <a
+              href={config.social.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-lg border border-white/10 bg-tertiary px-3.5 py-2 text-[13px] font-medium text-white transition-all hover:border-[#915EFF] hover:bg-[#915EFF]/10"
+              title="GitHub Profile"
+            >
+              <img src={github} alt="GitHub" className="h-4 w-4 object-contain" />
+              <span>GitHub</span>
+            </a>
+          </div>
+
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-8"
+            className="mt-8 flex flex-col gap-6"
           >
             {Object.keys(config.contact.form).map((input) => {
               const { span, placeholder } =
@@ -88,7 +123,7 @@ const Contact: React.FC = () => {
 
               return (
                 <label key={input} className="flex flex-col">
-                  <span className="mb-4 font-medium text-white">{span}</span>
+                  <span className="mb-3 font-medium text-white">{span}</span>
                   <Component
                     type={input === "email" ? "email" : "text"}
                     name={input}
@@ -96,7 +131,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     placeholder={placeholder}
                     className="bg-tertiary placeholder:text-secondary rounded-lg border-none px-6 py-4 font-medium text-white outline-none"
-                    {...(input === "message" && { rows: 7 })}
+                    {...(input === "message" && { rows: 5 })}
                   />
                 </label>
               );
