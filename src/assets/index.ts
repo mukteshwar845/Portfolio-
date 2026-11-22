@@ -53,10 +53,10 @@ import jupyternotebook from "./tech/jupyternotebook.svg";
 import jupyterlab from "./tech/jupyterlab.svg";
 import antigravity from "./tech/antigravity.svg";
 
-import seemadrishti from "./seemadrishti.svg";
-import keyrush from "./keyrush.svg";
-import convertx from "./convertx.svg";
-import cognora from "./cognora.svg";
+import seemadrishti from "./projects/seemadrishti.jpg";
+import keyrush from "./projects/keyrush.jpg";
+import convertx from "./projects/convertx.jpg";
+import cognora from "./projects/cognora.svg";
 
 export {
   logo,
