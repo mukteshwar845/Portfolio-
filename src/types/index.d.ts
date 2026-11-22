@@ -30,6 +30,21 @@ export type TProject = {
 
 export type TTechnology = Required<Omit<TCommonProps, "title">>;
 
+export type TTechSkill = {
+  name: string;
+  icon: string;
+  category: "web" | "database" | "aiml" | "tools" | "design";
+  categoryLabel: string;
+  tag: string;
+  featuredIn3D?: boolean;
+};
+
+export type TTechCategory = {
+  id: string;
+  title: string;
+  icon: string;
+};
+
 export type TNavLink = {
   id: string;
 } & Required<Pick<TCommonProps, "title">>;

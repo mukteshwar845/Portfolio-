@@ -2,6 +2,8 @@ import type {
   TNavLink,
   TService,
   TTechnology,
+  TTechSkill,
+  TTechCategory,
   TExperience,
   TTestimonial,
   TProject,
@@ -16,17 +18,34 @@ import {
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
   docker,
+  python,
+  java,
+  django,
+  flask,
+  firebase,
+  supabase,
+  postgres,
+  mysql,
+  numpy,
+  pandas,
+  matplotlib,
+  tensorflow,
+  scikitlearn,
+  yolo,
+  llmrouter,
+  github,
+  vercel,
+  netlify,
+  render,
+  anaconda,
+  canva,
+  stitch,
   seemadrishti,
   keyrush,
   convertx,
-  threejs,
   logo,
 } from "../assets";
 
@@ -60,58 +79,287 @@ const services: TService[] = [
   },
 ];
 
-const technologies: TTechnology[] = [
+export const techCategories: TTechCategory[] = [
+  { id: "all", title: "All Skills", icon: "⚡" },
+  { id: "web", title: "Web & Languages", icon: "🌐" },
+  { id: "database", title: "Databases", icon: "🗄️" },
+  { id: "aiml", title: "AI/ML & Data Science", icon: "🤖" },
+  { id: "tools", title: "Tools & Deployment", icon: "🛠️" },
+  { id: "design", title: "UI/UX & Design", icon: "🎨" },
+];
+
+export const techSkills: TTechSkill[] = [
+  // 🌐 Web & Languages
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Python",
+    icon: python,
+    category: "web",
+    categoryLabel: "Web & Languages",
+    tag: "Backend & AI",
+    featuredIn3D: true,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Java",
+    icon: java,
+    category: "web",
+    categoryLabel: "Web & Languages",
+    tag: "Enterprise & OOP",
+    featuredIn3D: true,
   },
   {
     name: "JavaScript",
     icon: javascript,
+    category: "web",
+    categoryLabel: "Web & Languages",
+    tag: "Core Web",
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+    category: "web",
+    categoryLabel: "Web & Languages",
+    tag: "Type-Safe JS",
+    featuredIn3D: true,
+  },
+  {
+    name: "React",
+    icon: reactjs,
+    category: "web",
+    categoryLabel: "Web & Languages",
+    tag: "Frontend Library",
+    featuredIn3D: true,
+  },
+  {
+    name: "Django",
+    icon: django,
+    category: "web",
+    categoryLabel: "Web & Languages",
+    tag: "Python Framework",
+  },
+  {
+    name: "Flask",
+    icon: flask,
+    category: "web",
+    categoryLabel: "Web & Languages",
+    tag: "Microframework",
+  },
+  {
+    name: "HTML5",
+    icon: html,
+    category: "web",
+    categoryLabel: "Web & Languages",
+    tag: "Semantic Markup",
+  },
+  {
+    name: "CSS3",
+    icon: css,
+    category: "web",
+    categoryLabel: "Web & Languages",
+    tag: "Modern Styling",
+  },
+
+  // 🗄️ Databases
+  {
+    name: "PostgreSQL",
+    icon: postgres,
+    category: "database",
+    categoryLabel: "Databases",
+    tag: "Relational DB",
+    featuredIn3D: true,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+    category: "database",
+    categoryLabel: "Databases",
+    tag: "SQL Database",
+  },
+  {
+    name: "Supabase",
+    icon: supabase,
+    category: "database",
+    categoryLabel: "Databases",
+    tag: "Backend & Auth",
+    featuredIn3D: true,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+    category: "database",
+    categoryLabel: "Databases",
+    tag: "Realtime NoSQL",
+  },
+
+  // 🤖 Data Science & AI/ML
+  {
+    name: "TensorFlow",
+    icon: tensorflow,
+    category: "aiml",
+    categoryLabel: "AI/ML & Data Science",
+    tag: "Deep Learning",
+    featuredIn3D: true,
+  },
+  {
+    name: "Scikit-Learn",
+    icon: scikitlearn,
+    category: "aiml",
+    categoryLabel: "AI/ML & Data Science",
+    tag: "Machine Learning",
+  },
+  {
+    name: "YOLO",
+    icon: yolo,
+    category: "aiml",
+    categoryLabel: "AI/ML & Data Science",
+    tag: "Computer Vision",
+    featuredIn3D: true,
+  },
+  {
+    name: "LLM Router",
+    icon: llmrouter,
+    category: "aiml",
+    categoryLabel: "AI/ML & Data Science",
+    tag: "AI Orchestration",
+  },
+  {
+    name: "NumPy",
+    icon: numpy,
+    category: "aiml",
+    categoryLabel: "AI/ML & Data Science",
+    tag: "Numerical Math",
+  },
+  {
+    name: "Pandas",
+    icon: pandas,
+    category: "aiml",
+    categoryLabel: "AI/ML & Data Science",
+    tag: "Data Analysis",
+  },
+  {
+    name: "Matplotlib",
+    icon: matplotlib,
+    category: "aiml",
+    categoryLabel: "AI/ML & Data Science",
+    tag: "Data Visualization",
+  },
+
+  // 🛠️ Tools & Deployment
+  {
+    name: "Git",
+    icon: git,
+    category: "tools",
+    categoryLabel: "Tools & Deployment",
+    tag: "Version Control",
+    featuredIn3D: true,
+  },
+  {
+    name: "GitHub",
+    icon: github,
+    category: "tools",
+    categoryLabel: "Tools & Deployment",
+    tag: "CI/CD & DevOps",
+  },
+  {
+    name: "Docker",
+    icon: docker,
+    category: "tools",
+    categoryLabel: "Tools & Deployment",
+    tag: "Containers",
+    featuredIn3D: true,
+  },
+  {
+    name: "Vercel",
+    icon: vercel,
+    category: "tools",
+    categoryLabel: "Tools & Deployment",
+    tag: "Frontend Cloud",
+  },
+  {
+    name: "Netlify",
+    icon: netlify,
+    category: "tools",
+    categoryLabel: "Tools & Deployment",
+    tag: "Edge Hosting",
+  },
+  {
+    name: "Render",
+    icon: render,
+    category: "tools",
+    categoryLabel: "Tools & Deployment",
+    tag: "Cloud Services",
+  },
+  {
+    name: "Anaconda",
+    icon: anaconda,
+    category: "tools",
+    categoryLabel: "Tools & Deployment",
+    tag: "Env Management",
+  },
+
+  // 🎨 Design
+  {
+    name: "Figma",
+    icon: figma,
+    category: "design",
+    categoryLabel: "UI/UX & Design",
+    tag: "UI/UX Design",
+  },
+  {
+    name: "Canva",
+    icon: canva,
+    category: "design",
+    categoryLabel: "UI/UX & Design",
+    tag: "Visual Graphics",
+  },
+  {
+    name: "Stitch",
+    icon: stitch,
+    category: "design",
+    categoryLabel: "UI/UX & Design",
+    tag: "Design Systems",
+  },
+];
+
+const technologies: TTechnology[] = [
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "React",
+    icon: reactjs,
   },
   {
     name: "TypeScript",
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "TensorFlow",
+    icon: tensorflow,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "PostgreSQL",
+    icon: postgres,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Docker",
+    icon: docker,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "YOLO",
+    icon: yolo,
+  },
+  {
+    name: "Supabase",
+    icon: supabase,
   },
 ];
 
@@ -149,10 +397,10 @@ const experiences: TExperience[] = [
     iconBg: "#151030",
     date: "Jan 2026 - Present",
     points: [
-      "Architecting intelligent full-stack applications integrating state-of-the-art LLMs, computer vision, and real-time AI pipelines.",
-      "Engineering mission-critical solutions including real-time AI surveillance matrices (SEEMADRISHTI) and automated document intelligence engines.",
-      "Bridging modern reactive frontend architectures, 3D WebGL interfaces, and high-throughput AI backend inference models.",
-      "Continuously pushing the boundaries of AI-driven developer tooling, intelligent UX, and cutting-edge software engineering.",
+      "Architecting intelligent full-stack applications integrating modern LLMs, neural vision pipelines, and agentic workflows.",
+      "Designing resilient microservices, vector search indexing, and real-time inference pipelines with high throughput.",
+      "Building full-stack web architectures utilizing React, TypeScript, Python/Flask, and modern relational/NoSQL backends.",
+      "Pioneering full-lifecycle AI integrations from prototype to production with automated observability and security.",
     ],
   },
 ];
@@ -160,7 +408,15 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I've never met a software engineer who truly cares about delivering exceptional craftsmanship and cutting-edge AI integration like Mukteswar does.",
+      "I thought it was impossible to make a website as beautiful as our product, but Mukteswar proved me wrong.",
+    name: "Sara Lee",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Mukteswar does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -168,7 +424,7 @@ const testimonials: TTestimonial[] = [
   },
   {
     testimonial:
-      "After Mukteswar optimized our architecture and integrated intelligent systems, our platform performance and user engagement increased significantly.",
+      "After Mukteswar optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -180,10 +436,10 @@ const projects: TProject[] = [
   {
     name: "SEEMADRISHTI",
     description:
-      "Real-time 9-channel tactical CCTV surveillance command matrix featuring 60 FPS AI computer vision overlay, ANPR license plate recognition, virtual tripwire alarms, and high-performance recorded archive scrubbing.",
+      "Advanced AI surveillance and reconnaissance system equipped with computer vision, real-time threat detection, and telemetry tracking engineered for precision monitoring and situational intelligence.",
     tags: [
       {
-        name: "typescript",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
@@ -191,7 +447,7 @@ const projects: TProject[] = [
         color: "green-text-gradient",
       },
       {
-        name: "react",
+        name: "yolo",
         color: "pink-text-gradient",
       },
     ],
@@ -242,4 +498,10 @@ const projects: TProject[] = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+};

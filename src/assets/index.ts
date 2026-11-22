@@ -22,6 +22,28 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import python from "./tech/python.svg";
+import java from "./tech/java.svg";
+import django from "./tech/django.svg";
+import flask from "./tech/flask.svg";
+import firebase from "./tech/firebase.svg";
+import supabase from "./tech/supabase.svg";
+import postgres from "./tech/postgres.svg";
+import mysql from "./tech/mysql.svg";
+import numpy from "./tech/numpy.svg";
+import pandas from "./tech/pandas.svg";
+import matplotlib from "./tech/matplotlib.svg";
+import tensorflow from "./tech/tensorflow.svg";
+import scikitlearn from "./tech/scikitlearn.svg";
+import yolo from "./tech/yolo.svg";
+import llmrouter from "./tech/llmrouter.svg";
+import vercel from "./tech/vercel.svg";
+import netlify from "./tech/netlify.svg";
+import render from "./tech/render.svg";
+import anaconda from "./tech/anaconda.svg";
+import canva from "./tech/canva.svg";
+import stitch from "./tech/stitch.svg";
+
 import seemadrishti from "./seemadrishti.svg";
 import keyrush from "./keyrush.svg";
 import convertx from "./convertx.svg";
@@ -49,6 +71,27 @@ export {
   tailwind,
   typescript,
   threejs,
+  python,
+  java,
+  django,
+  flask,
+  firebase,
+  supabase,
+  postgres,
+  mysql,
+  numpy,
+  pandas,
+  matplotlib,
+  tensorflow,
+  scikitlearn,
+  yolo,
+  llmrouter,
+  vercel,
+  netlify,
+  render,
+  anaconda,
+  canva,
+  stitch,
   seemadrishti,
   keyrush,
   convertx,
