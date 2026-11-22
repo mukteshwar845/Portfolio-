@@ -211,7 +211,7 @@ const projects: TProject[] = [
       },
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/mukteswar-gochhayat",
+    sourceCodeLink: "https://github.com/mukteshwar845",
   },
   {
     name: "Job IT",
@@ -232,7 +232,7 @@ const projects: TProject[] = [
       },
     ],
     image: jobit,
-    sourceCodeLink: "https://github.com/mukteswar-gochhayat",
+    sourceCodeLink: "https://github.com/mukteshwar845",
   },
   {
     name: "Trip Guide",
@@ -253,7 +253,7 @@ const projects: TProject[] = [
       },
     ],
     image: tripguide,
-    sourceCodeLink: "https://github.com/mukteswar-gochhayat",
+    sourceCodeLink: "https://github.com/mukteshwar845",
   },
 ];
 
