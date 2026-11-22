@@ -1,3 +1,4 @@
+import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -37,6 +38,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               <div
                 onClick={() => window.open(sourceCodeLink, "_blank")}
                 className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+                title="View Source Code"
               >
                 <img
                   src={github}
@@ -63,9 +65,9 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   );
 };
 
-const Works = () => {
+const Works: React.FC = () => {
   return (
-    <>
+    <SectionWrapper idName="projects">
       <Header useMotion={true} {...config.sections.works} />
 
       <div className="flex w-full">
@@ -77,13 +79,13 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7 max-sm:justify-center">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </SectionWrapper>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default Works;

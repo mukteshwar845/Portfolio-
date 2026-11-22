@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../../constants/styles";
@@ -44,7 +45,7 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
   </motion.div>
 );
 
-const Feedbacks = () => {
+const Feedbacks: React.FC = () => {
   return (
     <div className="bg-black-100 mt-12 rounded-[20px]">
       <div

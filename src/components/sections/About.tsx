@@ -8,13 +8,13 @@ import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 
-interface IServiceCard {
+interface ServiceCardProps {
   index: number;
   title: string;
   icon: string;
 }
 
-const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
+const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, icon }) => (
   <Tilt
     glareEnable
     tiltEnable
@@ -30,7 +30,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
         <div className="bg-tertiary flex min-h-[280px] flex-col items-center justify-evenly rounded-[20px] px-12 py-5">
           <img
             src={icon}
-            alt="web-development"
+            alt={title}
             className="h-16 w-16 object-contain"
           />
 
@@ -43,9 +43,9 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
   </Tilt>
 );
 
-const About = () => {
+const About: React.FC = () => {
   return (
-    <>
+    <SectionWrapper idName="about">
       <Header useMotion={true} {...config.sections.about} />
 
       <motion.p
@@ -60,8 +60,8 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </SectionWrapper>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default About;

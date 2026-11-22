@@ -56,9 +56,9 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
   );
 };
 
-const Experience = () => {
+const Experience: React.FC = () => {
   return (
-    <>
+    <SectionWrapper idName="work">
       <Header useMotion={true} {...config.sections.experience} />
 
       <div className="mt-20 flex flex-col">
@@ -68,8 +68,8 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </SectionWrapper>
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default Experience;
