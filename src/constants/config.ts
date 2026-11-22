@@ -54,7 +54,8 @@ export const config: TConfig = {
   hero: {
     name: "Mukteswar",
     p: [
-      "I build full-stack applications, explore AI/ML technologies and turn ideas into real-world solutions",
+      "I build full-stack applications, explore AI/ML technologies",
+      "and turn ideas into real-world solutions",
     ],
   },
   contact: {
@@ -76,7 +77,7 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a Full Stack Developer with AI Integration, specializing in TypeScript, JavaScript, Python, and modern web frameworks like React. I engineer scalable, high-performance applications, integrate intelligent AI solutions, and collaborate closely to turn ambitious ideas into reality. Let's work together to build impactful solutions!`,
+      content: `I'm a Full-Stack Developer with AI integration and AI/ML enthusiast passionate about building innovative web applications and intelligent digital solutions. With a foundation in Java and Python, I focus on developing modern, scalable applications, integrating AI-powered capabilities, and solving real-world problems through technology. I enjoy exploring emerging technologies, turning creative ideas into practical solutions, and continuously improving my engineering skills. My goal is to build impactful products that combine innovation, functionality, and great user experiences.`,
     },
     experience: {
       p: "What I have done so far",
