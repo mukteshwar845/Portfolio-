@@ -48,6 +48,7 @@ import {
   seemadrishti,
   keyrush,
   convertx,
+  cognora,
   logo,
 } from "../assets";
 
@@ -508,6 +509,27 @@ const projects: TProject[] = [
     ],
     image: convertx,
     sourceCodeLink: "https://github.com/mukteshwar845/ConvertX",
+  },
+  {
+    name: "Cognora AI",
+    description:
+      "Intelligent AI study assistant and personalized learning workspace engineered to accelerate knowledge acquisition with automated lecture digests, custom study roadmaps, and LLM-powered diagnostics.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "llm-agent",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cognora,
+    sourceCodeLink: "https://github.com/mukteshwar845/Cognora-AI-Study-Assistant",
   },
 ];
 

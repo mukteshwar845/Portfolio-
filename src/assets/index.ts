@@ -49,6 +49,7 @@ import stitch from "./tech/stitch.svg";
 import seemadrishti from "./seemadrishti.svg";
 import keyrush from "./keyrush.svg";
 import convertx from "./convertx.svg";
+import cognora from "./cognora.svg";
 
 export {
   logo,
@@ -99,4 +100,5 @@ export {
   seemadrishti,
   keyrush,
   convertx,
+  cognora,
 };
